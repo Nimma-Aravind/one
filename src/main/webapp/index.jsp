@@ -8,15 +8,15 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous">
 <style>
   :root{
-    --bg:#F6F3EC;
+    --bg:#F3F0E8;
     --surface:#FFFFFF;
-    --rail:#16231D;
-    --ink:#181712;
-    --accent:#2F6F4E;
-    --accent-ink:#F6F3EC;
-    --clay:#C46A3A;
-    --line:rgba(24,23,18,0.10);
-    --muted:#6E6A62;
+    --rail:#1C2541;
+    --ink:#191825;
+    --accent:#C98A2B;
+    --accent-ink:#1C2541;
+    --clay:#8B3A3A;
+    --line:rgba(25,24,37,0.10);
+    --muted:#68657A;
     --radius:4px;
   }
   *{margin:0;padding:0;box-sizing:border-box;}
@@ -98,7 +98,7 @@
     border:1px solid transparent;
   }
   .btn-accent{background:var(--accent);color:var(--accent-ink);}
-  .btn-accent:hover{background:#245A3F;}
+  .btn-accent:hover{background:#A8721F;}
   .btn-line{border-color:var(--ink);color:var(--ink);}
   .btn-line:hover{background:var(--ink);color:#fff;}
   .btn-white{background:#fff;color:var(--ink);}
@@ -133,7 +133,7 @@
     font-size:14px;font-weight:500;white-space:nowrap;transition:.15s ease;
   }
   .cat-chip i{color:var(--accent);}
-  .cat-chip:hover{border-color:var(--accent);background:#EEF4EF;}
+  .cat-chip:hover{border-color:var(--accent);background:#F8EFDC;}
 
   /* ===== bento product grid ===== */
   .bento{
