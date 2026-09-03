@@ -3,15 +3,14 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>NexusShop · friendly e‑commerce</title>
-  <!-- fonts & icons -->
+  <title>NexusShop · modern & friendly</title>
+  <!-- Fonts & Icons -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous">
   <style>
-    /* ----- ROOT (friendly, soft, accessible) ----- */
-    * { margin:0; padding:0; box-sizing:border-box; }
+    /* --- ROOT (soft, accessible, friendly) --- */
     :root {
-      --bg: #f7f6f4;
+      --bg: #f5f3f0;
       --card: #ffffff;
       --primary: #1e1e2f;
       --primary-light: #2e2e4a;
@@ -20,38 +19,33 @@
       --accent-dark: #b84e30;
       --muted: #6b6b7a;
       --muted-light: #a8a8b8;
-      --surface: #efedea;
+      --surface: #eeebe8;
       --success: #2a9d8f;
       --warning: #e9c46a;
       --radius: 18px;
-      --radius-sm: 12px;
-      --shadow: 0 6px 24px rgba(0,0,0,0.04);
-      --shadow-hover: 0 16px 48px rgba(0,0,0,0.08);
+      --radius-sm: 10px;
+      --shadow: 0 6px 20px rgba(0,0,0,0.04);
+      --shadow-hover: 0 16px 44px rgba(0,0,0,0.07);
       --transition: 0.2s ease;
       --container: 1240px;
-      --font: 'Inter', system-ui, sans-serif;
     }
-    html { scroll-behavior: smooth; }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
     body {
-      font-family: var(--font);
+      font-family: 'Inter', system-ui, sans-serif;
       background: var(--bg);
       color: var(--primary);
-      line-height: 1.5;
-      -webkit-font-smoothing: antialiased;
+      line-height:1.5;
+      -webkit-font-smoothing:antialiased;
     }
     a { color:inherit; text-decoration:none; }
     img { display:block; max-width:100%; }
     button { cursor:pointer; font-family:inherit; border:none; background:none; }
     input { font-family:inherit; }
-    .container {
-      max-width: var(--container);
-      margin:0 auto;
-      padding:0 24px;
-    }
+    .container { max-width:var(--container); margin:0 auto; padding:0 24px; }
     .muted { color:var(--muted); }
-    .text-center { text-align:center; }
 
-    /* ----- buttons (friendly & soft) ----- */
+    /* --- buttons (rounded, soft) --- */
     .btn {
       display:inline-flex; align-items:center; justify-content:center;
       gap:8px; padding:12px 28px; border-radius:999px;
@@ -81,19 +75,19 @@
       transform:translateY(-2px);
     }
     .btn-ghost {
-      background:rgba(255,255,255,0.12); color:#fff;
-      border-color:rgba(255,255,255,0.20);
+      background:rgba(255,255,255,0.10); color:#fff;
+      border-color:rgba(255,255,255,0.18);
     }
     .btn-ghost:hover {
       background:rgba(255,255,255,0.22); border-color:rgba(255,255,255,0.35);
       transform:translateY(-2px);
     }
-    .btn-sm { padding:8px 20px; font-size:13px; }
+    .btn-sm { padding:8px 18px; font-size:13px; }
 
-    /* ----- header (sticky, glass) ----- */
+    /* --- header (glass, clean) --- */
     header {
       position:sticky; top:0; z-index:100;
-      background:rgba(255,255,255,0.88); backdrop-filter:blur(12px);
+      background:rgba(255,255,255,0.85); backdrop-filter:blur(14px);
       border-bottom:1px solid rgba(30,30,47,0.04);
     }
     .header-inner {
@@ -189,18 +183,18 @@
     #mobileMenu ul li a:hover { background:var(--surface); }
     #mobileMenu ul li a i { width:22px; color:var(--muted); }
 
-    /* ----- hero (soft gradient) ----- */
+    /* --- hero (soft gradient, warm) --- */
     .hero {
       position:relative; display:flex; align-items:center;
-      min-height:440px; padding:56px 0;
+      min-height:420px; padding:52px 0;
       border-radius:var(--radius); overflow:hidden;
       margin:20px 24px 0;
-      background:linear-gradient(145deg, #1e1e2f 0%, #2e2e4a 100%);
+      background:linear-gradient(135deg, #1e1e2f 0%, #2e2e4a 100%);
     }
     .hero::before {
       content:''; position:absolute; inset:0;
       background:url('https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
-      opacity:0.25; z-index:0;
+      opacity:0.20; z-index:0;
     }
     .hero .container { position:relative; z-index:1; }
     .hero .badge {
@@ -211,17 +205,17 @@
     }
     .hero h1 {
       font-family:'Playfair Display', serif;
-      font-size:48px; font-weight:700; color:#fff;
+      font-size:46px; font-weight:700; color:#fff;
       line-height:1.15; max-width:600px; margin-bottom:14px;
     }
     .hero p {
-      color:rgba(255,255,255,0.80); font-size:17px;
+      color:rgba(255,255,255,0.78); font-size:17px;
       max-width:480px; margin-bottom:28px; line-height:1.6;
     }
     .hero .actions { display:flex; gap:12px; flex-wrap:wrap; }
 
-    /* ----- sections ----- */
-    .section { padding:52px 0; }
+    /* --- sections --- */
+    .section { padding:48px 0; }
     .section-header {
       display:flex; align-items:flex-end; justify-content:space-between;
       gap:16px; margin-bottom:28px; flex-wrap:wrap;
@@ -246,7 +240,7 @@
     }
     .cat-card {
       background:var(--card); border-radius:var(--radius);
-      padding:24px 12px; text-align:center;
+      padding:22px 12px; text-align:center;
       box-shadow:var(--shadow); transition:var(--transition);
       border:2px solid transparent; cursor:pointer;
     }
@@ -660,4 +654,6 @@
             <div class="timer-box"><div class="num" id="dealDays">0</div><div class="label">Days</div></div>
             <div class="timer-box"><div class="num" id="dealHours">00</div><div class="label">Hrs</div></div>
             <div class="timer-box"><div class="num" id="dealMinutes">00</div><div class="label">Min</div></div>
-            <div class="timer-box"><div class="num" id="dealSeconds">00
+            <div class="timer-box"><div class="num" id="dealSeconds">00</div><div class="label">Sec</div></div>
+          </div>
+          <button class="btn btn-primary" id="buyDeal"><i class="fas fa-cart-plus"></i>
