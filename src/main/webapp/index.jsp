@@ -322,9 +322,9 @@
   <!-- ===== LEDGER BAR ===== -->
   <div class="ledger-bar">
     <div class="container">
-      <span class="l-item"><i class="fas fa-truck"></i> Free shipping over $50</span>
-      <span class="l-item"><i class="fas fa-bolt"></i> 12 items marked down today</span>
-      <span class="l-item"><i class="fas fa-rotate-left"></i> Returns accepted, no fine print</span>
+      <span class="l-item"><i class="fas fa-truck"><em> Free shipping over $50</span>
+      <span class="l-item"><i class="fas fa-bolt"><em> 12 items marked down today</span>
+      <span class="l-item"><i class="fas fa-rotate-left"><em> Returns accepted, no fine print</span>
     </div>
   </div>
 
